@@ -1,0 +1,19 @@
+def count_vowels(word):
+    vowels = 'aeiou'
+    count = 0
+    for char in word:
+        if char.lower() in vowels:
+            count += 1
+    return count
+
+if __name__ == "__main__":
+    word = input("Enter a word: ")
+    num_vowels = count_vowels(word)
+    print(f"The number of vowels in '{word}' is: {num_vowels}")
+
+#The count_vowels function takes a word (string) as input and counts the number of vowels in it.
+#It initializes a counter variable count to 0 and iterates through each character in the word using a for loop.
+#Within the loop, it checks if the lowercase version of the character is in the string vowels, which contains all the vowels.
+#If the character is a vowel, it increments the count variable.
+#Finally, it returns the count of vowels in the word.
+#In the __main__ block, it prompts the user to input a word, calls the count_vowels function, and prints the result.
